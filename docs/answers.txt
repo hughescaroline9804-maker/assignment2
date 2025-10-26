@@ -1,0 +1,49 @@
+Git Lab Tutorials: October 25, 2025
+GitHub Account: October 25, 2025
+
+#5:
+    P1. Output of the console after pushing changes in 3A:
+	carolinehughes@Carolines-MacBook-Air assignment2 % git push origin master
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 10 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (4/4), 487 bytes | 487.00 KiB/s, done.
+	Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/hughescaroline9804-maker/assignment2
+   	a103334..d6daec3  master -> master
+
+    P2. How many commits have been done to the repository so far? 
+	9; git fetch --all --tags
+	   git rev-list --all --count
+
+    P3. When was the README.md file modified last?
+	2025-10-25 at 06:09:28+01.00; git log -1 --date=iso-strict --format="%ad  %h  %s" -- README.md
+
+    P4. 2 reasons why we use branches in Git repository?
+	1- It allows us to test changes and other features without modifying the main code
+	2- It lets multiple people work on different things at the same time without having any issues
+    
+    P5. Difference between git log and git status.
+	Git log is a log of all of the commits that have already happened with the who and when of the commits.
+	Git status is kind of like a checklist where it shows what files are ready to commit and what still needs to be added.
+
+    P6. What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+	git log --follow --name-only --pretty=format:"%h %ad %s" --date=short -- Vehicle.h
+
+    P7. What command would you use to see the commits whose commit message contains the word “file”?
+	git log --all --grep="file" -i --pretty=format:"%h %ad %s" --date=short
+
+    P8. In terms of OOP What is inheritance? What is polymorphism? What is encapsulation?
+	Inheritance: allows us to create a new class from a pre-existing class.
+	Polymorphism: allows us to have multiple implementations for the same interface
+	Encapsulation: when we wrap up data and the functions that operate on it into a single package
+
+    P9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+	Dictator and Lieutenants- distributes the integration between its lieutenants
+	Integration manager- centralizes the integration under one person
+    
+    P10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
+	The work could be divided into smaller pieces which are then passed through lieutenants and merged and then passed onto the dictator versus the centralized workflow which would have everyone working on the same branch. "Too many cooks in the kitchen".
+	
